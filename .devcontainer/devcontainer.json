@@ -1,0 +1,19 @@
+{
+    "name": "FluCoMa CLI",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+    "workspaceFolder": "/workspace",
+    "remoteEnv": {
+        "PATH": "/usr/local/bin/flucoma-cli/bin:${containerEnv:PATH}"
+    },
+    "postCreateCommand": "echo 'FluCoMa CLI environment ready. Binaries available at /usr/local/bin/flucoma-cli/bin'",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash"
+            }
+        }
+    }
+}
