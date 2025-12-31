@@ -1,0 +1,7 @@
+# BufCompose
+
+Copying contiguous data between buffers and arrays
+[Filling the Shell](/explore/burton)[BufSelect](/reference/bufselect)[BufSelectEvery](/reference/bufselectevery)
+BufCompose is a powerful utility for manipulating and copying targeted sections of buffers and arrays. It allows you to specify start frames and channels and a number of frames and channels to copy from a source location to a destination. In addition to these copying procedures you can adjust the source and destination gain. When paired with objects such as BufSelect and BufSelectEvery the possibilities for buffer and array manipulation are vast.
+`source``destination`[BufSelect](/reference/bufselect)[BufSelectEvery](/reference/bufselectevery)
+You can experiment with a limited subset of these features in BufCompose below mainly focused on the relationship between the number of frames and channels as well as their start indices.

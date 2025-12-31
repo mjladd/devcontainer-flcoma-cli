@@ -1,0 +1,12 @@
+
+
+# KNNRegressor
+Regression with K Nearest Neighbours
+
+
+
+
+
+
+
+[Fleeting Networks ](/explore/tremblay)[Neural Network Training ](/learn/mlp-training)[Training and Testing Data ](/learn/training-testing-split)[Why Scale? Distance as Similarity ](/learn/why-scale)[DataSet ](/reference/dataset)[KDTree ](/reference/kdtree)KNNRegressor is a supervised machine learning algorithm for regression. In machine learning, regression can be thought of as a mapping from one space to another where both can contain continuous values. In order to make predictions, the KNNRegressor must first be`fit`with an input[DataSet](/reference/dataset)of data points, each of which is paired (by means of a shared identifier) with another data point in an output DataSet.The KNNRegressor uses an internal[KDTree](/reference/kdtree)to find an input point’s`numNeighbours`nearest neighbours in an input dataset. When the`weight`parameter equals`1`, the output returned is a weighted average of those neighbours’ values from the output DataSet (this is the default). If the`weight`parameter is set to`0`, the output returned is a simple average of the neighbours.When training machine learning models, including the KNNRegressor, it could be important to test and validate the trained model. Learn more about this process at[Training-Testing Split](/learn/training-testing-split).
