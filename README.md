@@ -18,7 +18,7 @@ Once inside the container, all FluCoMa CLI tools are available in your terminal.
 
 ## Directory Structure
 
-```
+```shell
 .
 ├── audio/          # Place your input audio files here
 ├── output/         # Processed files will be saved here
@@ -51,6 +51,7 @@ Files in `audio/` and `output/` persist on your local machine when the container
 | `fluid-transientslice` | Transient-based segmentation |
 
 Run any tool with `--help` for detailed options:
+
 ```bash
 fluid-noveltyslice --help
 ```
@@ -90,6 +91,7 @@ fluid-spectralshape -source audio/sound.wav -centroid output/centroid.wav -sprea
 ## Supported Audio Formats
 
 FluCoMa CLI supports common audio formats including:
+
 - WAV
 - AIFF
 - FLAC
@@ -101,6 +103,7 @@ FluCoMa CLI supports common audio formats including:
 This repository includes comprehensive documentation for all FluCoMa tools in the `flucoma_docs/` directory:
 
 #### Analyze Sound
+
 - [ampfeature](flucoma_docs/analyze_sound/ampfeature.md) - Amplitude feature extraction
 - [bufcompose](flucoma_docs/analyze_sound/bufcompose.md) - Buffer composition
 - [bufstft](flucoma_docs/analyze_sound/bufstft.md) - Short-time Fourier transform
@@ -115,6 +118,7 @@ This repository includes comprehensive documentation for all FluCoMa tools in th
 - [spectralshape](flucoma_docs/analyze_sound/spectralshape.md) - Spectral shape descriptors
 
 #### Decompose Sound
+
 - [bufnmf](flucoma_docs/decompose_sound/bufnmf.md) - Non-negative matrix factorization
 - [bufnmfseed](flucoma_docs/decompose_sound/bufnmfseed.md) - Seeded NMF
 - [hpss](flucoma_docs/decompose_sound/hpss.md) - Harmonic-percussive source separation
@@ -122,6 +126,7 @@ This repository includes comprehensive documentation for all FluCoMa tools in th
 - [transients](flucoma_docs/decompose_sound/transients.md) - Transient extraction
 
 #### Slice Sound
+
 - [ampgate](flucoma_docs/slice_sound/ampgate.md) - Amplitude gating
 - [ampslice](flucoma_docs/slice_sound/ampslice.md) - Amplitude-based slicing
 - [noveltyslice](flucoma_docs/slice_sound/noveltyslice.md) - Novelty-based segmentation
@@ -129,12 +134,14 @@ This repository includes comprehensive documentation for all FluCoMa tools in th
 - [transientslice](flucoma_docs/slice_sound/transientslice.md) - Transient-based segmentation
 
 #### Transform Sound
+
 - [audiotransport](flucoma_docs/transform_sound/audiotransport.md) - Optimal transport between sounds
 - [bufnmfcross](flucoma_docs/transform_sound/bufnmfcross.md) - Cross-synthesis with NMF
 - [nmffilter](flucoma_docs/transform_sound/nmffilter.md) - NMF filtering
 - [nmfmorph](flucoma_docs/transform_sound/nmfmorph.md) - NMF morphing
 
 #### Analyze Data
+
 - [bufstats](flucoma_docs/analyze_data/bufstats.md) - Buffer statistics
 - [dataset](flucoma_docs/analyze_data/dataset.md) - Dataset management
 - [datasetquery](flucoma_docs/analyze_data/datasetquery.md) - Dataset querying
@@ -157,6 +164,7 @@ This repository includes comprehensive documentation for all FluCoMa tools in th
 - [umap](flucoma_docs/analyze_data/umap.md) - Uniform manifold approximation
 
 #### Utility Objects
+
 - [bufcompose](flucoma_docs/utility_objects/bufcompose.md) - Buffer composition
 - [bufflatten](flucoma_docs/utility_objects/bufflatten.md) - Buffer flattening
 - [bufscale](flucoma_docs/utility_objects/bufscale.md) - Buffer scaling
